@@ -179,7 +179,7 @@ jobs:
           echo "xray=${{fromJson(inputs.plugins).xray}}" >> $GITHUB_ENV
           echo "trojan=${{fromJson(inputs.plugins).trojan}}" >> $GITHUB_ENV
           echo "ssobfs=${{fromJson(inputs.plugins).ssobfs}}" >> $GITHUB_ENV
-          echo "smartdns=${{fromJson(inputs.plugins).smartdns}}" >> $GITHUB_ENV
+          echo "zerotier=${{fromJson(inputs.plugins).zerotier}}" >> $GITHUB_ENV
           echo "vlmcsd=${{fromJson(inputs.plugins).vlmcsd}}" >> $GITHUB_ENV
           echo "ttyd=${{fromJson(inputs.plugins).ttyd}}" >> $GITHUB_ENV
           echo "iperf3=${{fromJson(inputs.plugins).iperf3}}" >> $GITHUB_ENV
