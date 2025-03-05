@@ -7,9 +7,9 @@ x=${lanip#*.*}
 oc2=${x%%.*}
 x=${x#*.*}
 oc3=${x%%.*}
-dhcpfrom=$oc1"."$oc2"."$oc3".100"
-dhcpto=$oc1"."$oc2"."$oc3".244"
-sed -i "s/\"192.168.2.1\"/\"$lanip\"/g" $defaultfile
-sed -i "s/\"192.168.2.100\"/\"$dhcpfrom\"/g" $defaultfile
-sed -i "s/\"192.168.2.244\"/\"$dhcpto\"/g" $defaultfile
-sed -i "s/192.168.2.1/$lanip/" $dicfile
+dhcpfrom=$oc1"."$oc2"."$oc3".10"
+dhcpto=$oc1"."$oc2"."$oc3".150"
+sed -i "s/\"192.168.31.1\"/\"$lanip\"/g" $defaultfile
+sed -i "s/\"192.168.31.10\"/\"$dhcpfrom\"/g" $defaultfile
+sed -i "s/\"192.168.31.150\"/\"$dhcpto\"/g" $defaultfile
+sed -i "s/192.168.31.1/$lanip/" $dicfile
