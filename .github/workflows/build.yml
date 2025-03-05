@@ -103,7 +103,7 @@ on:
         description: 'String JSON list of plug-ins'
         required: true
         type: string
-        default: '{"ss":"n","v2ray":"n","xray":"n","trojan":"n","ssobfs":"n","smartdns":"y","vlmcsd":"n","ttyd":"n","iperf3":"n"}'
+        default: '{"ss":"n","v2ray":"n","xray":"n","trojan":"n","ssobfs":"n","zerotier":"y","vlmcsd":"n","ttyd":"n","iperf3":"n"}'
       customization:
         description: 'String JSON list of Customization'
         required: true
@@ -212,7 +212,7 @@ jobs:
           echo "CONFIG_FIRMWARE_INCLUDE_XRAY=${{env.xray}}" >> .config
           echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=${{env.trojan}}" >> .config
           echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=${{env.ssobfs}}" >> .config
-          echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=${{env.smartdns}}" >> .config
+          echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=${{env.zerotier}}" >> .config
           echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=${{env.vlmcsd}}" >> .config
           echo "CONFIG_FIRMWARE_INCLUDE_TTYD=${{env.ttyd}}" >> .config
           echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=${{env.iperf3}}" >> .config
