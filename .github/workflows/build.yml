@@ -106,7 +106,7 @@ on:
         default: '{"ss":"n","v2ray":"n","xray":"n","trojan":"n","ssobfs":"n","zerotier":"y","smartdns":"y","vlmcsd":"n","ttyd":"n","iperf3":"n"}'
       customization:
         description: 'String JSON list of Customization'
-        required: true
+        required: false
         type: string
         default: '{"lanip":"192.168.31.1","signaccount":"admin","signpassword":"admin","wifi2gssid":"xiaomi","wifi2gpsk":"wmh5634194","wifi5gssid":"xiaomi_5G","wifi5gpsk":"wmh5634194"}'
       nanoversion:
