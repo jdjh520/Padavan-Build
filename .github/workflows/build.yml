@@ -101,7 +101,7 @@ on:
         - '0x3B2'
       plugins:
         description: 'String JSON list of plug-ins'
-        required: true
+        required: false
         type: string
         default: '{"ss":"n","v2ray":"n","xray":"n","trojan":"n","ssobfs":"n","zerotier":"y","smartdns":"y","vlmcsd":"n","ttyd":"n","iperf3":"n"}'
       customization:
