@@ -125,7 +125,7 @@ env:
   FIRMWARE_AUTHOR: TurBoTse
   FIRMWARE_BRANCH: main
   FIRMWARE_REPO: padavan
-  FIRMWARE_URL: https://github.com/TurBoTse/padavan.git
+  FIRMWARE_URL: https://github.com/jdjh520/Padavan-3.4-KVR.git
   TOOLCHAIN_ROOT: toolchain/toolchain-mipsel
   TOOLCHAIN_URL: https://github.com/TurBoTse/padavan/releases/download/toolchain
 jobs:
