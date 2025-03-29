@@ -101,18 +101,18 @@ on:
         - '0x3B2'
       plugins:
         description: 'String JSON list of plug-ins'
-        required: true
+        required: false
         type: string
         default: '{"ss":"n","v2ray":"n","xray":"n","trojan":"n","ssobfs":"n","zerotier":"y","smartdns":"y","vlmcsd":"n","ttyd":"n","iperf3":"n"}'
       customization:
         description: 'String JSON list of Customization'
-        required: true
+        required: false
         type: string
         default: '{"lanip":"192.168.31.1","signaccount":"admin","signpassword":"admin","wifi2gssid":"xiaomi","wifi2gpsk":"wmh5634194","wifi5gssid":"xiaomi_5G","wifi5gpsk":"wmh5634194"}'
       nanoversion:
         type: boolean
         description: 'Compile the nano version'
-        default: false
+        default: true
       oldreleases:
         type: boolean
         description: 'Delete old releases'
@@ -125,7 +125,7 @@ env:
   FIRMWARE_AUTHOR: TurBoTse
   FIRMWARE_BRANCH: main
   FIRMWARE_REPO: padavan
-  FIRMWARE_URL: https://github.com/TurBoTse/padavan.git
+  FIRMWARE_URL: https://github.com/jdjh520/padavan.git
   TOOLCHAIN_ROOT: toolchain/toolchain-mipsel
   TOOLCHAIN_URL: https://github.com/TurBoTse/padavan/releases/download/toolchain
 jobs:
